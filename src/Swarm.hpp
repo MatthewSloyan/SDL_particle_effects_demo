@@ -14,15 +14,16 @@ namespace testnamespace {
 
 class Swarm {
 public:
-	const static int NPARTICLES = 1000;
+	const static int NPARTICLES = 4000;
 
 private:
 	Particle *m_particles;
+	int lastTime;
 
 public:
 	Swarm();
 	virtual ~Swarm();
-	void update();
+	void update(int elapsed);
 
 	Particle * const getParticles() { return m_particles; };
 };
