@@ -20,7 +20,8 @@ src/main.o: ../src/main.cpp /usr/include/SDL2/SDL.h \
  /usr/include/SDL2/SDL_messagebox.h /usr/include/SDL2/SDL_power.h \
  /usr/include/SDL2/SDL_render.h /usr/include/SDL2/SDL_shape.h \
  /usr/include/SDL2/SDL_system.h /usr/include/SDL2/SDL_timer.h \
- /usr/include/SDL2/SDL_version.h ../src/Screen.hpp
+ /usr/include/SDL2/SDL_version.h ../src/Screen.hpp ../src/Swarm.hpp \
+ ../src/Particle.hpp
 
 /usr/include/SDL2/SDL.h:
 
@@ -111,3 +112,7 @@ src/main.o: ../src/main.cpp /usr/include/SDL2/SDL.h \
 /usr/include/SDL2/SDL_version.h:
 
 ../src/Screen.hpp:
+
+../src/Swarm.hpp:
+
+../src/Particle.hpp:
