@@ -1,4 +1,4 @@
-src/main.o: ../src/main.cpp /usr/include/SDL2/SDL.h \
+src/Screen.o: ../src/Screen.cpp ../src/Screen.hpp /usr/include/SDL2/SDL.h \
  /usr/include/SDL2/SDL_main.h /usr/include/SDL2/SDL_stdinc.h \
  /usr/include/SDL2/SDL_config.h /usr/include/SDL2/SDL_platform.h \
  /usr/include/SDL2/begin_code.h /usr/include/SDL2/close_code.h \
@@ -20,7 +20,9 @@ src/main.o: ../src/main.cpp /usr/include/SDL2/SDL.h \
  /usr/include/SDL2/SDL_messagebox.h /usr/include/SDL2/SDL_power.h \
  /usr/include/SDL2/SDL_render.h /usr/include/SDL2/SDL_shape.h \
  /usr/include/SDL2/SDL_system.h /usr/include/SDL2/SDL_timer.h \
- /usr/include/SDL2/SDL_version.h ../src/Screen.hpp
+ /usr/include/SDL2/SDL_version.h
+
+../src/Screen.hpp:
 
 /usr/include/SDL2/SDL.h:
 
@@ -109,5 +111,3 @@ src/main.o: ../src/main.cpp /usr/include/SDL2/SDL.h \
 /usr/include/SDL2/SDL_timer.h:
 
 /usr/include/SDL2/SDL_version.h:
-
-../src/Screen.hpp:
