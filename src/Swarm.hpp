@@ -14,7 +14,7 @@ namespace testnamespace {
 
 class Swarm {
 public:
-	const static int NPARTICLES = 5000;
+	const static int NPARTICLES = 1000;
 
 private:
 	Particle *m_particles;
@@ -22,6 +22,7 @@ private:
 public:
 	Swarm();
 	virtual ~Swarm();
+	void update();
 
 	Particle * const getParticles() { return m_particles; };
 };
