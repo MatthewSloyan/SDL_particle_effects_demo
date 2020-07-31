@@ -67,7 +67,7 @@ void Screen::boxBlur() {
 	m_buffer2 = temp;
 
 	for (int y = 0; y < SCREEN_HEIGHT; y++) {
-		for (int x = 0; x < SCREEN_HEIGHT; x++) {
+		for (int x = 0; x < SCREEN_WIDTH; x++) {
 
 			int redTotal = 0;
 			int greenTotal = 0;
@@ -127,8 +127,7 @@ void Screen::setPixel(int x, int y, Uint8 red, Uint8 green, Uint8 blue) {
 }
 
 void Screen::update() {
-	SDL_UpdateTexture(m_texture, NULL, m_buffer1,
-			SCREEN_WIDTH * sizeof(Uint32));
+	SDL_UpdateTexture(m_texture, NULL, m_buffer1, SCREEN_WIDTH * sizeof(Uint32));
 	SDL_RenderClear(m_renderer);
 	SDL_RenderCopy(m_renderer, m_texture, NULL, NULL);
 	SDL_RenderPresent(m_renderer);
